@@ -1,0 +1,81 @@
+/* Base setup for box model */
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Global box-sizing reset */
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+/* Main body styles */
+body{
+    font-family: Arial, 'Segoe UI', Roboto, 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading styles */
+h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 28px;
+    color: #1a237e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* About section container styles */
+.about {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #2196f3;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Paragraph styles within about section */
+.about p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #424242;
+    margin-bottom: 25px;
+}
+
+/* Image container styles */
+#image-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px solid #1565c0;
+    border-radius: 12px;
+    background-color: white;
+}
+
+/* Image styles */
+#image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
